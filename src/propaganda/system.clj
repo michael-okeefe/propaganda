@@ -9,11 +9,11 @@
   clojure value can be used as a cell identifier. Cells do not need to
   be initialised. Their value defaults to
   propaganda.values/nothing. When a value is added to the system,
-  propagators are alerted, bringing the system to an unstabile
+  propagators are alerted, bringing the system to an unstable
   state.
 
   The system is cooled down until it reaches a stabile state again. If
-  the :audit? key is true in the metadata of the system, each unstabile
+  the :audit? key is true in the metadata of the system, each unstable
   system is stored under the :prev key of the systems."
   (add-value             [this cell value])
   (get-value             [this cell])
